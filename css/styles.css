@@ -295,12 +295,16 @@ h1, h2, h3, h4, h5, h6, p {
     width: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-team-item:hover .soc-team-link, 
-    .our-team-item:focus .soc-team-link{
+.our-team-item:hover .soc-team-link {
     background-color: #404bbf;
-    }
+}
+
+.our-team-item:focus .soc-team-link {
+    background-color: #404bbf;
+}
 
 .soc-team-link {
     width: 100%;
@@ -323,9 +327,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .soc-team-item {
     /* fill: #64ab5e; */
-    
-    
-    
     width: 40px;
     height: 40px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -504,6 +505,7 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-link:hover, .soc-link:focus {
